@@ -1,0 +1,13 @@
+--init
+    --n          $1
+    --pointeur   $2
+    --compteur   $3
+
+
+--boucle
+    --Operation
+    --Regarde si fin x = n
+        --Si oui jump fin
+        --Sinon  jump boucle
+    
+--fin 
