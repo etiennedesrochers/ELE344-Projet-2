@@ -21,8 +21,17 @@ BEGIN
 
 process 
 begin
-   Funct <="100000";
+   
    OP<= "000000";
+   Funct <="100000";
+   wait for 20 ns;
+   Funct <="100010";
+   wait for 20 ns;
+   Funct <="100100";
+   wait for 20 ns;
+   Funct <="100101";
+   wait for 20 ns;
+   Funct <="101010";
    wait for 20 ns;
    op <= "100011";
    wait for 20 ns;  
@@ -32,7 +41,7 @@ begin
    wait for 20 ns;
    OP<= "001000";
    wait for 20 ns;
-   OP<= "000100";
+   OP<= "000010";
    wait for 20 ns;
 end process;
 end control_tb_arc;
