@@ -8,22 +8,27 @@ PORT (
  MemtoReg, MemWrite, MemRead, Branch, AluSrc,
  RegDst, RegWrite, Jump : OUT std_logic;
  AluControl : OUT std_logic_vector(3 downto 0));
-END controller; -- Controller;
+END; -- Controller;
 
 architecture control of controller is 
-    SIGNAL bus_s      :std_logic_vector(9 downto 0);
+--signal
+    SIGNAL BUSE      :std_logic_vector(9 downto 0);
     SIGNAL ALUOP    :std_logic_vector(1 downto 0);
 begin
-    process(op,ALUOP)
+--Besoin de 2 process differnt pour le Main Decoder et le ALU DECODER
+    process(op)
     begin
         case op is 
-            when "000000" => bus_s <= "1100000100";
-            when "100011" => bus_s <= "1010101000";
-            when "101011" => bus_s <= "0X1001X000";
-            when "000100" => bus_s <= "0X0100X010";
-            when "001000" => bus_s <= "1010000000";
-            when others => bus_s <=   "0XXX00XXX1";
+            when "000000" => BUSE <= "1100000100";
+            when "100011" => BUSE <= "1010101000";
+            when "101011" => BUSE <= "0X1001X000";
+            when "000100" => BUSE <= "0X0100X010";
+            when "001000" => BUSE <= "1010000000";
+            when others => BUSE <=   "0XXX00XXX1";
         end case;
+    end process;
+    process(ALUOP)
+    begin
         case ALUOP is 
             when "00" =>  AluControl <= "0010";
             when "01" => AluControl  <= "0110";
@@ -36,19 +41,19 @@ begin
                     when others => AluControl <= "0111";
                 end case;
             when others=> AluControl <= "XXXX";
-        end case;
+            end case;
     end process;
     --Assignation des sorties
-    Jump <= bus_s(0);
-    ALUOP(0) <= bus_s(1);
-    ALUOP(1) <= bus_s(2);
-    MemtoReg <= bus_s(3);
-    MemWrite <= bus_s(4);
-    MemRead <= bus_s(5);
-    Branch <= bus_s(6);
-    AluSrc <= bus_s(7);
-    RegDst <= bus_s(8);
-    RegWrite <= bus_s(9);
+    Jump <= BUSE(0);
+    ALUOP(0) <= BUSE(1);
+    ALUOP(1) <= BUSE(2);
+    MemtoReg <= BUSE(3);
+    MemWrite <= BUSE(4);
+    MemRead <= BUSE(5);
+    Branch <= BUSE(6);
+    AluSrc <= BUSE(7);
+    RegDst <= BUSE(8);
+    RegWrite <= BUSE(9);
     
 
     --Traitement de ALu control

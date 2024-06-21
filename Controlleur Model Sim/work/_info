@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA/18.1
 Econtrol_tb
-Z0 w1718990108
+Z0 w1718990143
 Z1 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -23,9 +23,9 @@ VT7QG78;N?KCiUJH4fzF[Q0
 !s100 Se;=V`c0>Y_FlTh[BIgQl2
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1718990120
+Z9 !s110 1718990530
 !i10b 1
-Z10 !s108 1718990120.000000
+Z10 !s108 1718990530.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
 Z12 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
 !i113 1
@@ -37,11 +37,11 @@ R1
 R2
 R3
 R4
-Z16 DEx4 work 10 control_tb 0 22 T7QG78;N?KCiUJH4fzF[Q0
+DEx4 work 10 control_tb 0 22 T7QG78;N?KCiUJH4fzF[Q0
 l15
 L11
-Z17 VI^<59D3=3]:hP4kVm3>^X3
-Z18 !s100 aIXWS3AX@S3=ZIfGK2UmD0
+VI^<59D3=3]:hP4kVm3>^X3
+!s100 aIXWS3AX@S3=ZIfGK2UmD0
 R8
 32
 R9
@@ -53,24 +53,24 @@ R12
 R13
 R14
 Econtroller
-Z19 w1718989133
+Z16 w1718990736
 R2
 R3
 R4
 R5
-Z20 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd
-Z21 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd
+Z17 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd
+Z18 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd
 l0
 L5
-V1lTB@j>Z<nEzCi8k7gNd<0
-!s100 b]gFT82bo?`o3@=lPiA;I0
+VdFO]H7:k8:ZBHMQ=HOWI?0
+!s100 A@ASYX5>GB7g5_JO;_V]=2
 R8
 32
-Z22 !s110 1718990001
+Z19 !s110 1718990745
 !i10b 1
-Z23 !s108 1718990001.000000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd|
-Z25 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd|
+Z20 !s108 1718990745.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd|
+Z22 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd|
 !i113 1
 R13
 R14
@@ -78,18 +78,18 @@ Acontrol
 R2
 R3
 R4
-R15
-l16
+DEx4 work 10 controller 0 22 dFO]H7:k8:ZBHMQ=HOWI?0
+l17
 L13
-Vk8a_8EfWnOI@ll7j:S@PK2
-!s100 =D<goJEOozLQPXFzHNOUW3
+V^DQ=8TlhTG<j;eoafnaSG3
+!s100 o@:jUhm>Y7IJa7Z5XB3Df3
 R8
 32
-R22
+R19
 !i10b 1
-R23
-R24
-R25
+R20
+R21
+R22
 !i113 1
 R13
 R14

@@ -15,7 +15,8 @@ architecture control of controller is
     SIGNAL BUS      :std_logic_vector(9 downto 0);
     SIGNAL ALUOP    :std_logic_vector(1 downto 0);
 begin
-    process(op,ALUOP)
+--Besoin de 2 process differnt pour le Main Decoder et le ALU DECODER
+    process(op)
     begin
         case op is 
             when "000000" => BUS <= "1100000100";
@@ -24,7 +25,9 @@ begin
             when "000100" => BUS <= "0X0100X010";
             when "001000" => BUS <= "1010000000";
             when others => BUS <=   "0XXX00XXX1";
-
+    end process;
+    process(ALUOP)
+    begin
         case ALUOP is 
             when "00" =>  AluControl <= "0010";
             when "01" => AluControl  <= "0110";
