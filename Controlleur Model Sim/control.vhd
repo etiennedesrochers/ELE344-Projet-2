@@ -27,7 +27,7 @@ begin
             when others => BUSE <=   "0XXX00XXX1";
         end case;
     end process;
-    process(op,Funct)
+    process(op,Funct,ALUOP,BUSE)
     begin
         case ALUOP is 
             when "00" =>  AluControl <= "0010";
