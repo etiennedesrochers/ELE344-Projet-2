@@ -31,7 +31,7 @@ begin
 
     controller_inst: entity work.controller
     port map (
-      OP         => Instruction(31 downto 25),
+      OP         => Instruction(31 downto 26),
       Funct      => Instruction(5 downto 0),
       MemtoReg   => MemToReg,
       MemWrite   => MemoryToWrite,

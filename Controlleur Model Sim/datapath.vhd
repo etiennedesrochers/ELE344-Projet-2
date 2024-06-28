@@ -24,7 +24,7 @@ architecture rtl of data_path is
     signal PCBRANCH             : std_logic_vector(31 downto 0);
     signal READDATA1            : std_logic_vector(31 downto 0);
     signal READDATA2            : std_logic_vector(31 downto 0);
-    signal WRITEREGISTER        : std_Logic_vector(31 downto 0);
+    signal WRITEREGISTER        : std_Logic_vector(4 downto 0);
     signal RESULTALU            : std_Logic_vector(31 downto 0);
     signal REGISTERDEST         : std_logic_vector(31 downto 0);
     signal MUX4_VAL             : std_logic_vector(31 downto 0);
@@ -47,13 +47,13 @@ begin
     --SHIFT LEFT 2
     Instruction_Shift_l2 <= (Instruction(25 downto 0)) & ("00");
     --SHIFT LEFT 16 to 32
-    Instruction_Shift_l2 <= (Instruction(15 downto 0)) & (others =>'0');
+    Instruction_Extend32 <= std_logic_vector(resize(unsigned(Instruction(15 downto 0)),32));--(Instruction(15 downto 0)) & (others =>'0');
     --Combine les signaux de PCPLUS 4 et instruction shift left 2
     PC_JUMP <= (PC_PLUS_4(31 downto 28) &(Instruction_Shift_l2));
 
     PCSrc <= Branch and Zero;
     --Additionneur pcplus 4 et signImmsh
-    SignImmSh <= (IMMSIGN(29 downto 0)) & (others => '0');
+    SignImmSh <= (Instruction_Extend32(29 downto 0)) & ("00");
     addpclus4signext_inst: entity work.addpclus4signext
     PORT MAP(PCPLUS4 => PC_PLUS_4,IMMSIGN => SignImmSh,PCBranch => PCBRANCH);
 
@@ -75,7 +75,11 @@ begin
     );
     --Multiplexeur pour la valeur de write register (WRITEREGISTER)
     mux3_inst: entity work.mux
+    generic map (
+        N => 5
+      )
      port map(
+       
         Input_0 => Instruction(20 downto 16),
         Input_1 => Instruction(15 downto 11),
         sel => RegDst,

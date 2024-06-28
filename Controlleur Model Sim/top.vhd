@@ -21,11 +21,13 @@ architecture rtl of top is
   signal MemWrite : std_logic;
   signal AluResult_s : std_logic_vector(31 downto 0);
   signal WriteData_s   : std_logic_vector(31 downto 0);
+  signal ReadData_s   : std_logic_vector(31 downto 0);
+
 begin
     
     imem_inst: entity work.imem
     port map (
-      adresse => PC_s,
+      adresse => PC_s(16 downto 11),
       data    => Instruction
     );
 
@@ -46,8 +48,8 @@ begin
       clk       => clk,
       MemWrite  => MemWrite,
       adresse   => AluResult_s,
-      WriteData => WriteData,
-      ReadData  => WriteData_s
+      WriteData => WriteData_s,
+      ReadData  => ReadData_s
     );
     PC<= PC_s;
     AluResult <= AluResult_s;

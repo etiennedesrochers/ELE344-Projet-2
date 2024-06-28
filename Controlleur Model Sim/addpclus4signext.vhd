@@ -13,7 +13,7 @@ end;
 architecture rtl of addpclus4signext is
     signal addSign : unsigned(31 downto 0);
 begin
-    process(PCPLUS4,PCBranch)
+    process(PCPLUS4)
     begin
         addSign <= unsigned(PCPLUS4) + unsigned(IMMSIGN);
     end process;

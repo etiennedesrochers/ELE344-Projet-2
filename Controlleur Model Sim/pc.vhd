@@ -15,7 +15,7 @@ architecture rtl of PC is
 begin
     process (Clk,RESET)
     begin
-        if RESET then
+        if RESET = '1' then
             PC_Value <= (others=>'0');
         elsif rising_edge(CLK) then 
             PC_Value <= PC_IN;

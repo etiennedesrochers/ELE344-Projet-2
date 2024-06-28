@@ -8,88 +8,613 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA/18.1
-Econtrol_tb
-Z0 w1718999586
-Z1 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z5 dC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim
-Z6 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd
-Z7 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd
+Eaddpclus4signext
+Z0 w1719596640
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim
+Z5 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/addpclus4signext.vhd
+Z6 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/addpclus4signext.vhd
 l0
-L7
-VT7QG78;N?KCiUJH4fzF[Q0
-!s100 Se;=V`c0>Y_FlTh[BIgQl2
-Z8 OV;C;10.5b;63
+L5
+V8F?lGOiX^m9IV3@[DlHL20
+!s100 47Ca=cSa2_23Tmdf6PXGS0
+Z7 OV;C;10.5b;63
 32
-Z9 !s110 1718999598
+Z8 !s110 1719597789
 !i10b 1
-Z10 !s108 1718999597.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
-Z12 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
+Z9 !s108 1719597789.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/addpclus4signext.vhd|
+Z11 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/addpclus4signext.vhd|
 !i113 1
-Z13 o-work work -2002 -explicit
-Z14 tExplicit 1 CvgOpt 0
-Acontrol_tb_arc
-Z15 DEx4 work 10 controller 0 22 dFO]H7:k8:ZBHMQ=HOWI?0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+Z14 DEx4 work 16 addpclus4signext 0 22 8F?lGOiX^m9IV3@[DlHL20
+l15
+L13
+V78Ic9=U8=bN_JcM_jM4`93
+!s100 1[cz:@XD[7cH9XLh[8_5E2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econtrol_tb
+Z15 w1718999586
+Z16 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
 R3
 R4
+Z17 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd
+Z18 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd
+l0
+L7
+VT7QG78;N?KCiUJH4fzF[Q0
+!s100 Se;=V`c0>Y_FlTh[BIgQl2
+R7
+32
+R8
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
+Z20 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
+!i113 1
+R12
+R13
+Acontrol_tb_arc
+Z21 DEx4 work 10 controller 0 22 dFO]H7:k8:ZBHMQ=HOWI?0
+R16
+R1
+R2
+R3
 DEx4 work 10 control_tb 0 22 T7QG78;N?KCiUJH4fzF[Q0
 l15
 L11
 V4D:;Q5;llS2F]b<L4@`1h0
 !s100 e:5d8FUh8XnX0]03GiM1U3
-R8
+R7
 32
-R9
+R8
 !i10b 1
-R10
-R11
-R12
+R9
+R19
+R20
 !i113 1
+R12
 R13
-R14
 Econtroller
-Z16 w1718999408
+Z22 w1718999408
+R1
 R2
 R3
 R4
-R5
-Z17 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd
-Z18 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd
+Z23 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd
+Z24 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd
 l0
 L5
 VdFO]H7:k8:ZBHMQ=HOWI?0
 !s100 A@ASYX5>GB7g5_JO;_V]=2
-R8
+R7
 32
-R9
+R8
 !i10b 1
-Z19 !s108 1718999598.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd|
-Z21 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd|
+R9
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd|
+Z26 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd|
 !i113 1
+R12
 R13
-R14
 Acontrol
+R1
+R2
+R3
+R21
+l17
+L13
+Vn9Z[0lZA1l0IeV3VZM6fS1
+!s100 A3DQ5>TnTL<bVj9^Lc;T81
+R7
+32
+R8
+!i10b 1
+R9
+R25
+R26
+!i113 1
+R12
+R13
+Edata_path
+Z27 w1719597525
+R1
 R2
 R3
 R4
-R15
-l17
-L13
-Z22 Vn9Z[0lZA1l0IeV3VZM6fS1
-Z23 !s100 A3DQ5>TnTL<bVj9^Lc;T81
-R8
+Z28 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd
+Z29 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd
+l0
+L5
+VZ<l@MjC8eShX=e>>hPM6=0
+!s100 [C0mf`_LXeoNGNBVZfFTj2
+R7
 32
-R9
+R8
 !i10b 1
-R19
-R20
-R21
+R9
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd|
+Z31 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd|
 !i113 1
+R12
 R13
+Artl
+Z32 DEx4 work 3 ual 0 22 NCUB[PSKS:TDMOh>SY5IT3
+Z33 DEx4 work 7 regfile 0 22 TMPG0d[GAkZlb^oUiha4R2
+Z34 DEx4 work 3 mux 0 22 jc3H67?ekWIYn0aEXDOXP1
 R14
+Z35 DEx4 work 8 pc_plus4 0 22 ^TP9O=:llizg`[8oz_<b<2
+Z36 DEx4 work 2 pc 0 22 OEkL^=mkN?Kdn:jdB^EE<1
+R1
+R2
+R3
+Z37 DEx4 work 9 data_path 0 22 Z<l@MjC8eShX=e>>hPM6=0
+l39
+L16
+Vh^DOI6I>V`<DkdY[BOe5d1
+!s100 3nIhj@^`j[gL7HYLU>3G21
+R7
+32
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Edec7seg
+Z38 w1718999001
+R2
+R3
+R4
+Z39 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd
+Z40 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd
+l0
+L12
+VBC`a5j6:V<76Qj;^DYYMg0
+!s100 d8IF9YbiMmZo5?[KKU2Se2
+R7
+32
+Z41 !s110 1719597790
+!i10b 1
+R9
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd|
+Z43 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd|
+!i113 1
+R12
+R13
+Adec7seg_archi
+R2
+R3
+DEx4 work 7 dec7seg 0 22 BC`a5j6:V<76Qj;^DYYMg0
+l19
+L18
+V]9Hm2ZO:c`fQa<I=<;[3M0
+!s100 da=Pb5@6B[F0LU1iaTo@G0
+R7
+32
+R41
+!i10b 1
+R9
+R42
+R43
+!i113 1
+R12
+R13
+Edmem
+R38
+R1
+R2
+R3
+Z44 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R4
+Z45 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dmem.vhd
+Z46 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dmem.vhd
+l0
+L17
+V[Ll;=EMH^IeRkDfbm5D=91
+!s100 ZCg9=A:N4Vo9<SIIMFLL_0
+R7
+32
+R41
+!i10b 1
+Z47 !s108 1719597790.000000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dmem.vhd|
+Z49 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dmem.vhd|
+!i113 1
+R12
+R13
+Admem_arch
+R1
+R2
+R3
+R44
+Z50 DEx4 work 4 dmem 0 22 [Ll;=EMH^IeRkDfbm5D=91
+l33
+L24
+VhiDRLRAi95gBX8H_4e9>83
+!s100 l_1m9XWkbQ[C`B<_W_BPd3
+R7
+32
+R41
+!i10b 1
+R47
+R48
+R49
+!i113 1
+R12
+R13
+Eimem
+R38
+R1
+R2
+R3
+R4
+Z51 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/imem.vhd
+Z52 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/imem.vhd
+l0
+L14
+Vez8=bkRNojOVLN;:@]Y[R2
+!s100 Zg=zeS19;9hLQAQYhFJ4]3
+R7
+32
+R41
+!i10b 1
+R47
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/imem.vhd|
+Z54 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/imem.vhd|
+!i113 1
+R12
+R13
+Aimem_arch
+R1
+R2
+R3
+Z55 DEx4 work 4 imem 0 22 ez8=bkRNojOVLN;:@]Y[R2
+l44
+L20
+VCQ7cAaMBf9U6W1o<8Dgac1
+!s100 J@64oJ1nD`fU4HkMV;cZT2
+R7
+32
+R41
+!i10b 1
+R47
+R53
+R54
+!i113 1
+R12
+R13
+Emips
+Z56 w1719597590
+R1
+R2
+R3
+R4
+Z57 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd
+Z58 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd
+l0
+L5
+V:Wk0;9oeljcZm<mlC4^EP3
+!s100 `71]4:j?DaalCF=Y0OWfV2
+R7
+32
+R41
+!i10b 1
+R47
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd|
+Z60 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd|
+!i113 1
+R12
+R13
+Artl
+R37
+R21
+R1
+R2
+R3
+Z61 DEx4 work 4 mips 0 22 :Wk0;9oeljcZm<mlC4^EP3
+l30
+L19
+VzL33lJBY4GoD>=0A8?Mg>0
+!s100 K`:dDm7cOZ0k_SFZdDV;C2
+R7
+32
+R41
+!i10b 1
+R47
+R59
+R60
+!i113 1
+R12
+R13
+Emux
+Z62 w1719597238
+R1
+R2
+R3
+R4
+Z63 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux2.vhd
+Z64 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux2.vhd
+l0
+L5
+Vjc3H67?ekWIYn0aEXDOXP1
+!s100 iKPg]9IXRf]fK]B`MZ4^T1
+R7
+32
+R41
+!i10b 1
+R47
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux2.vhd|
+Z66 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux2.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+R34
+l19
+L15
+Ve9V;hGN62BMYaoj;aN2Zf3
+!s100 61RYAJTAB?c6GRK<M[dbg2
+R7
+32
+R41
+!i10b 1
+R47
+R65
+R66
+!i113 1
+R12
+R13
+Epc
+Z67 w1719596572
+R1
+R2
+R3
+R4
+Z68 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pc.vhd
+Z69 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pc.vhd
+l0
+L5
+VOEkL^=mkN?Kdn:jdB^EE<1
+!s100 ;UW[fgHa_HChI<zmizb;k0
+R7
+32
+R41
+!i10b 1
+R47
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pc.vhd|
+Z71 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pc.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+R36
+l15
+L13
+V?N=H1D=Xi10Cf^53Bkcbm0
+!s100 I24BeRZ<2>b`@ZlznjdD43
+R7
+32
+R41
+!i10b 1
+R47
+R70
+R71
+!i113 1
+R12
+R13
+Epc_plus4
+Z72 w1718995681
+R1
+R2
+R3
+R4
+Z73 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd
+Z74 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd
+l0
+L5
+V^TP9O=:llizg`[8oz_<b<2
+!s100 [g[5m72JMg<XX3<d70TIU3
+R7
+32
+R41
+!i10b 1
+R47
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd|
+Z76 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+R35
+l14
+L12
+VaXSH`]9U7MkH^NeEYL[RR1
+!s100 F:>RDk74DWEfm8Tboi59L1
+R7
+32
+R41
+!i10b 1
+R47
+R75
+R76
+!i113 1
+R12
+R13
+Eregfile
+R38
+R1
+R2
+R3
+R4
+Z77 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/regfile.vhd
+Z78 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/regfile.vhd
+l0
+L17
+VTMPG0d[GAkZlb^oUiha4R2
+!s100 73N?_3S2S:gN^e96Lk2d_0
+R7
+32
+R41
+!i10b 1
+R47
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/regfile.vhd|
+Z80 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/regfile.vhd|
+!i113 1
+R12
+R13
+Aregfile_arch
+R1
+R2
+R3
+R33
+l28
+L25
+Vj@LFnfhFj8h5aHNMIJRX^3
+!s100 mJCA2cEOP=N2aUY[i:c2m0
+R7
+32
+R41
+!i10b 1
+R47
+R79
+R80
+!i113 1
+R12
+R13
+Etop
+Z81 w1719597781
+R1
+R2
+R3
+R4
+Z82 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd
+Z83 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd
+l0
+L6
+V41]bVzDgN?m>0keP]H8_n0
+!s100 CO;<1U`Z`NIV?mcKY`5f=1
+R7
+32
+R41
+!i10b 1
+R47
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd|
+Z85 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd|
+!i113 1
+R12
+R13
+Artl
+R44
+R50
+R61
+R55
+R1
+R2
+R3
+DEx4 work 3 top 0 22 41]bVzDgN?m>0keP]H8_n0
+l26
+L16
+VdU5P<FAJm=ohTS:BXO5ZA3
+!s100 R3gmCV2Mm]P]kR]0AiQ6U1
+R7
+32
+R41
+!i10b 1
+R47
+R84
+R85
+!i113 1
+R12
+R13
+Etop_fpga
+R38
+R2
+R3
+R4
+8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top_fpga.vhd
+FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top_fpga.vhd
+l0
+L18
+Vm1VN9Ak_:oL<a:=VZYSSf0
+!s100 Vgn:]MMEFT9QNi`fbS;LO2
+R7
+32
+!s110 1719596502
+!i10b 1
+!s108 1719596502.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top_fpga.vhd|
+!s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top_fpga.vhd|
+!i113 1
+R12
+R13
+Eual
+Z86 w1717787234
+R1
+R2
+R3
+R4
+Z87 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd
+Z88 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd
+l0
+L14
+VNCUB[PSKS:TDMOh>SY5IT3
+!s100 _zXEffzekJbTQfjgWa[UZ0
+R7
+32
+R8
+!i10b 1
+R9
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd|
+Z90 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+R32
+l28
+L22
+Va1mz0LfD@o42`egaz[TjN0
+!s100 LP_[J]a1T>E;_[Ta8f^Uz0
+R7
+32
+R8
+!i10b 1
+R9
+R89
+R90
+!i113 1
+R12
+R13
