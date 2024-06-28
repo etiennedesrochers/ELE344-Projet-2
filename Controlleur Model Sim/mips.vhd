@@ -17,21 +17,52 @@ entity mips is
 end entity;
 
 architecture rtl of mips is
-  signal SignalDeControl : std_logic_vector(3 downto 0);
+  signal SignalDeControl    : std_logic_vector(3 downto 0);
+  signal MemToReg           : std_logic;
+  signal MemoryToWrite      : std_logic;
+  signal MemoryToRead       : std_logic;
+  signal Branch             : std_logic;
+  signal Alusrc             : std_logic;
+  signal RegDst             : std_logic;
+  signal RegWrite           : std_logic;
+  signal Jump               : std_logic;
+  signal AluControl         : std_logic_vector(3 downto 0);
 begin
 
     controller_inst: entity work.controller
     port map (
       OP         => Instruction(31 downto 25),
-      Funct      => Instruction(),
-      MemtoReg   => MemtoReg,
-      MemWrite   => MemWrite,
-      MemRead    => MemRead,
+      Funct      => Instruction(5 downto 0),
+      MemtoReg   => MemToReg,
+      MemWrite   => MemoryToWrite,
+      MemRead    => MemoryToRead,
       Branch     => Branch,
-      AluSrc     => AluSrc,
+      AluSrc     => Alusrc,
       RegDst     => RegDst,
       RegWrite   => RegWrite,
       Jump       => Jump,
       AluControl => AluControl
+    );
+
+    data_path_inst: entity work.data_path
+    port map (
+      CLK         => CLK,
+      RESET       => RESET,
+      MemToReg    => MemToReg,
+      Branch      => Branch,
+      AluSrc      => AluSrc,
+      RegDst      => RegDst,
+      RegWrite    => RegWrite,
+      Jump        => Jump,
+      MemReadIn   => MemoryToRead,
+      MemWriteIn  => MemoryToWrite,
+      AluControl  => AluControl,
+      Instruction => Instruction,
+      ReadData    => ReadData,
+      MemReadOut  => MemRead,
+      MemWriteOut => MemWrite,
+      PC          => PC,
+      AluResult   => AluResult,
+      WriteData   => WriteData
     );
 end architecture;
