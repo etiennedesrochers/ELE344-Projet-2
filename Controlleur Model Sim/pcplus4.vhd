@@ -12,10 +12,7 @@ end;
 architecture rtl of PC_Plus4 is
     signal add4: unsigned(31 downto 0);
 begin
-    process(PC)
-    begin
-        add4 <= unsigned(PC) +4;
-    end process;
+    add4 <= unsigned(PC) +4;
     PC_OUT <= std_logic_vector(add4);
 end architecture;
 

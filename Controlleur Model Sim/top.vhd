@@ -27,7 +27,7 @@ begin
     
     imem_inst: entity work.imem
     port map (
-      adresse => PC_s(16 downto 11),
+      adresse => PC_s(7 downto 2),
       data    => Instruction
     );
 
@@ -39,7 +39,7 @@ begin
         Instruction => Instruction,
         MemRead => MemRead,
         MemWrite => MemWrite,
-        PC => PC,
+        PC => PC_s,
         WriteData => WriteData_s,
         AluResult => AluResult_s
     );

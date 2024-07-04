@@ -29,7 +29,7 @@ architecture rtl of mips is
   signal AluControl         : std_logic_vector(3 downto 0);
 begin
 
-    controller_inst: entity work.controller
+    control_inst: entity work.control
     port map (
       OP         => Instruction(31 downto 26),
       Funct      => Instruction(5 downto 0),
@@ -44,7 +44,7 @@ begin
       AluControl => AluControl
     );
 
-    data_path_inst: entity work.data_path
+    data_path_inst: entity work.datapath
     port map (
       CLK         => CLK,
       RESET       => RESET,

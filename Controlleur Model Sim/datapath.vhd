@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY data_path IS
+ENTITY datapath IS
 PORT (
     CLK,RESET,MemToReg,Branch,AluSrc,
     RegDst,RegWrite,Jump,MemReadIn,MemWriteIn     : IN std_logic;
@@ -13,124 +13,138 @@ PORT (
 );
 end;
 
-architecture rtl of data_path is
-    signal PC_NEXT              : std_logic_vector(31 downto 0);
-    signal PC_NEXT_BR           : std_logic_vector(31 downto 0);
-    signal PC_O                 : std_logic_vector(31 downto 0);
-    signal PC_PLUS_4            : std_logic_vector(31 downto 0);
-    signal Instruction_Shift_l2 : std_logic_vector(27 downto 0);
-    signal PC_JUMP              : std_logic_vector(31 downto 0);
-    signal IMMSIGN              : std_logic_vector(31 downto 0);
-    signal PCBRANCH             : std_logic_vector(31 downto 0);
-    signal READDATA1            : std_logic_vector(31 downto 0);
-    signal READDATA2            : std_logic_vector(31 downto 0);
-    signal WRITEREGISTER        : std_Logic_vector(4 downto 0);
-    signal RESULTALU            : std_Logic_vector(31 downto 0);
-    signal REGISTERDEST         : std_logic_vector(31 downto 0);
-    signal MUX4_VAL             : std_logic_vector(31 downto 0);
-    signal Instruction_Extend   : std_logic_vector(31 downto 0);
-    signal Instruction_Extend32 : std_logic_vector(31 DOWNTO 0);    
-    signal RESULT               : std_logic_vector(31 downto 0);
-    signal SignImmSh            : std_logic_vector(31 downto 0);
-    signal Zero                 : std_logic;
-    signal Cout                 : std_logic;
-    signal PCSrc                : std_logic;
+architecture rtl of datapath is
 
-begin                   
-    
-    PC_entity : Entity work.PC
-    PORT MAP (CLK,RESET,PC_NEXT,PC_O);
-    
-    PCPlus4_inst: entity work.PC_Plus4
-    PORT MAP(PC_O,PC_PLUS_4);
+    signal PCPLUS4 :std_Logic_vector(31 downto 0);
+    signal PC_s    :std_logic_vector(31 downto 0);
+    signal PCNEXT :std_Logic_vector(31 downto 0);
+    signal SignImmSh: std_logic_vector(31 downto 0);
+    signal SignImm: std_logic_vector(31 downto 0);
+    signal PCBranch: std_logic_vector(31 downto 0);
+    signal PCJUMP: std_logic_vector(31 downto 0);
+    signal PCNextbr: std_logic_vector(31 downto 0);
+    signal WriteReg : std_logic_vector(4 downto 0);
+    signal Result : std_logic_vector(31 downto 0);
+    signal ReadData1: std_logic_vector(31 downto 0); 
+    signal ReadData2: std_logic_vector(31 downto 0);
+    signal srcB : std_logic_vector(31 downto 0);
+    signal AluResult_s : std_logic_vector(31 downto 0);
+    signal PCSrc: std_logic;
+    signal Zero : std_logic;
+    signal cout : std_logic;
+begin    
+    PC_bascule: entity work.PC
+     port map(
+        Clk => Clk,
+        RESET => RESET,
+        PC_IN => PCNEXT,
+        PC_OUT => PC_S
+    );
 
-    --SHIFT LEFT 2
-    Instruction_Shift_l2 <= (Instruction(25 downto 0)) & ("00");
-    --SHIFT LEFT 16 to 32
-    Instruction_Extend32 <= std_logic_vector(resize(unsigned(Instruction(15 downto 0)),32));--(Instruction(15 downto 0)) & (others =>'0');
-    --Combine les signaux de PCPLUS 4 et instruction shift left 2
-    PC_JUMP <= (PC_PLUS_4(31 downto 28) &(Instruction_Shift_l2));
+    --PCPLUS4
+    PC_Plus4_inst: entity work.PC_Plus4
+     port map(
+        PC => PC_s,
+        PC_OUT => PCPLUS4
+    );
+
+    --PCBRANCH
+    PCBranch <= std_logic_vector(unsigned(PCPLUS4) + unsigned(SignImmSh));
+    --PC JUMP 
+    PCJUMP <= PCPLUS4(31 downto 28) & Instruction(25 downto 0) & "00";
+
+    
+
+    SignImmSh <= SignImm(29 downto 0) &"00";
 
     PCSrc <= Branch and Zero;
-    --Additionneur pcplus 4 et signImmsh
-    SignImmSh <= (Instruction_Extend32(29 downto 0)) & ("00");
-    addpclus4signext_inst: entity work.addpclus4signext
-    PORT MAP(PCPLUS4 => PC_PLUS_4,IMMSIGN => SignImmSh,PCBranch => PCBRANCH);
-
-    --mutiplexeur pour pcnextbr (1)
-   mux_inst: entity work.mux
-    port map(
-        Input_0 => PC_PLUS_4,
-        Input_1 => PCBRANCH,
+    mux_PCNEXTBR: entity work.mux
+     generic map(
+        N => 32
+    )
+     port map(
+        Input_0 => PCPLUS4,
+        Input_1 => PCBranch,
         sel => PCSrc,
-        out1 => PC_NEXT_BR
-   );
-    --multiplexeur pour pc next (2)
-    mux2_inst: entity work.mux
+        out1 => PCNextbr
+    );
+
+    mux_Jump: entity work.mux
+     generic map(
+        N => 32
+    )
      port map(
-        Input_0 => PC_NEXT_BR,
-        Input_1 => PC_JUMP,
+        Input_0 => PCNextbr,
+        Input_1 => PCJUMP,
         sel => JUMP,
-        out1 => PC_NEXT
+        out1 => PCNEXT
     );
-    --Multiplexeur pour la valeur de write register (WRITEREGISTER)
-    mux3_inst: entity work.mux
-    generic map (
+
+
+    -- REGISTRE
+    mux_WriteReg 
+    : entity work.mux
+     generic map(
         N => 5
-      )
+    )
      port map(
-       
         Input_0 => Instruction(20 downto 16),
-        Input_1 => Instruction(15 downto 11),
+        Input_1 =>  Instruction(15 downto 11),
         sel => RegDst,
-        out1 => WRITEREGISTER
+        out1 => WriteReg
     );
-    --Registre 
     RegFile_inst: entity work.RegFile
      port map(
         clk => clk,
         we => RegWrite,
         ra1 => Instruction(25 downto 21),
         ra2 => Instruction(20 downto 16),
-        wa => WRITEREGISTER,
-        wd => RESULT,
-        rd1 => READDATA1,
-        rd2 => READDATA2
+        wa => WriteReg,
+        wd => Result,
+        rd1 => ReadData1,
+        rd2 => ReadData2
+    );
+    SignImm <= (Instruction(15 downto 0))   & (15 downto 0 => '0');
+
+    mux_Result: entity work.mux
+     generic map(
+        N => 32
+    )
+     port map(
+        Input_1 => ReadData,
+        Input_0 =>AluResult_s,
+        sel => MemToReg,
+        out1 => Result
+    );
+    --ALU
+    mux_srcB: entity work.mux
+    generic map (
+      N => 32
+    )
+    port map (
+      Input_0 => ReadData2,
+      Input_1 => SignImm,
+      sel     => AluSrc,
+      out1    => srcB
     );
 
-    
-    
-    
-    mux4_inst: entity work.mux
-     port map(
-        Input_0 => READDATA2,
-        Input_1 => Instruction_Shift_l2,
-        sel => AluSrc,
-        out1 => MUX4_VAL
-    );
-    --alu 
     UAL_inst: entity work.UAL
      generic map(
         N => 32
     )
      port map(
         ualControl => AluControl,
-        srcA => READDATA1,
-        srcB => MUX4_VAL,
-        result => RESULTALU,
+        srcA => ReadData1,
+        srcB => srcB,
+        result => AluResult_s,
         cout => cout,
-        zero => zero
+        zero => Zero
     );
-    mux5_inst: entity work.mux
-    port map (
-        Input_0  => RESULTALU,
-        Input_1  => ReadData,
-        sel  => MemToReg,
-        out1 => RESULT
-    );
-    PC <= PC_O;
-    WriteData<= READDATA2;
-    AluResult <= RESULTALU;
-    MemReadOut <= MemReadIn;
+
+    AluResult <= AluResult_s;
+    WriteData <= ReadData2;
+    Pc <= PC_s;
+    MemReadOut<= MemReadIn;
     MemWriteOut <= MemWriteIn;
+    
 end architecture;

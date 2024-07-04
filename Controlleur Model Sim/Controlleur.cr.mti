@@ -1,40 +1,11 @@
-{C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd}
+{C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity data_path
--- Compiling architecture rtl of data_path
--- Loading entity PC
--- Loading entity PC_Plus4
--- Loading entity addpclus4signext
--- Loading entity mux
--- Loading entity RegFile
--- Loading entity UAL
-** Error (suppressible): C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd(79): (vcom-1272) Length of formal "Input_0" is 32; length of slice name is 5.
-** Error (suppressible): C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd(80): (vcom-1272) Length of formal "Input_1" is 32; length of slice name is 5.
-** Error (suppressible): C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd(91): (vcom-1272) Length of formal "wa" is 5; length of actual is 32.
-** Error (suppressible): C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd(103): (vcom-1272) Length of formal "Input_1" is 32; length of actual is 28.
-** Error: C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/datapath.vhd(132): VHDL Compiler exiting
-
-} {19.0 20.0} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/imem.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/imem.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity imem
--- Compiling architecture imem_arch of imem
-
-} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity controller
--- Compiling architecture control of controller
+-- Compiling entity control
+-- Compiling architecture control of control
 
 } {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dmem.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dmem.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -66,7 +37,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling architecture control_tb_arc of control_tb
 -- Loading entity controller
 
-} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd}
+} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -74,12 +45,10 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity mips
 -- Compiling architecture rtl of mips
--- Loading entity controller
--- Loading entity data_path
-** Error (suppressible): C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd(34): (vcom-1272) Length of formal "OP" is 6; length of slice name is 7.
-** Error: C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mips.vhd(68): VHDL Compiler exiting
+-- Loading entity control
+-- Loading entity datapath
 
-} {12.0 13.0} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd}
+} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -96,7 +65,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity dec7seg
 -- Compiling architecture dec7seg_archi of dec7seg
 
-} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd}
+} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity PC_Plus4
+-- Compiling architecture rtl of PC_Plus4
+
+} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -108,13 +86,8 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading entity mips
 -- Loading package MATH_REAL
 -- Loading entity dmem
-** Error: C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd(51): Cannot read output "WriteData".
-	VHDL 2008 allows reading outputs.
-	This facility is enabled by compiling with -2008.
-** Error (suppressible): C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd(28): (vcom-1272) Length of formal "adresse" is 6; length of actual is 32.
-** Error: C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top.vhd(55): VHDL Compiler exiting
 
-} {13.0 14.0 17.0 18.0} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pc.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pc.vhd}
+} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pc.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pc.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -123,14 +96,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity PC
 -- Compiling architecture rtl of PC
 
-} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd}
+} {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux2.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity PC_Plus4
--- Compiling architecture rtl of PC_Plus4
+-- Compiling entity mux
+-- Compiling architecture rtl of mux
 
 } {} {}} {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/addpclus4signext.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/addpclus4signext.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

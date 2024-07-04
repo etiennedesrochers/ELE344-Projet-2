@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY controller IS
+ENTITY control IS
 PORT (
  OP, Funct: IN std_logic_vector(5 downto 0);
  MemtoReg, MemWrite, MemRead, Branch, AluSrc,
@@ -10,7 +10,7 @@ PORT (
  AluControl : OUT std_logic_vector(3 downto 0));
 END; -- Controller;
 
-architecture control of controller is 
+architecture control of control is 
 --signal
     SIGNAL BUSE      :std_logic_vector(9 downto 0);
     SIGNAL ALUOP    :std_logic_vector(1 downto 0);

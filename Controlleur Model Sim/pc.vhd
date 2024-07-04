@@ -13,7 +13,7 @@ end;
 architecture rtl of PC is
     signal PC_Value : std_logic_vector(31 downto 0);
 begin
-    process (Clk,RESET)
+    process (Clk,RESET,PC_IN)
     begin
         if RESET = '1' then
             PC_Value <= (others=>'0');
