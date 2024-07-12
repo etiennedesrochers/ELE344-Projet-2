@@ -27,16 +27,16 @@ END ENTITY top_fpga;
 
 ARCHITECTURE rtl OF top_fpga IS
   SIGNAL Memwrite               : std_logic;
-  SIGNAL PC                     : std_logic_vector (7 DOWNTO 0);
+  SIGNAL PC                     : std_logic_vector (31 DOWNTO 0);
   SIGNAL WriteData, DataAddress : std_logic_vector (31 DOWNTO 0);
 BEGIN  -- ARCHITECTURE tb
   -- Instantiation du top
   DUT : ENTITY work.top
     PORT MAP (Reset       => KEY(0),
-              clock       => KEY(1),
+              clk       => KEY(1),
               PC          => PC,
               WriteData   => WriteData,
-              DataAddress => DataAddress);
+              AluResult => DataAddress);
 
   -- Afficheurs 7-segments pour les ports de sortie
   dec7seg_0 : ENTITY work.dec7seg PORT MAP (HEX0, PC(3 DOWNTO 0));

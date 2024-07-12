@@ -15,7 +15,7 @@ USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
 ENTITY dmem IS                          -- Memoire de donnees
-  PORT (clk, MemWrite      : IN  std_logic;
+  PORT (clk, MemWrite,Memread      : IN  std_logic;
         adresse, WriteData : IN  std_logic_vector(31 DOWNTO 0);
         ReadData           : OUT std_logic_vector(31 DOWNTO 0));
 END;  -- dmem;

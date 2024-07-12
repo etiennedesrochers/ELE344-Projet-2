@@ -32,6 +32,7 @@ architecture rtl of datapath is
     signal PCSrc: std_logic;
     signal Zero : std_logic;
     signal cout : std_logic;
+    
 begin    
     PC_bascule: entity work.PC
      port map(
@@ -58,7 +59,8 @@ begin
     SignImmSh <= SignImm(29 downto 0) &"00";
 
     PCSrc <= Branch and Zero;
-    mux_PCNEXTBR: entity work.mux
+   
+    mux_PCNEXTBR: entity work.mux2
      generic map(
         N => 32
     )
@@ -69,7 +71,7 @@ begin
         out1 => PCNextbr
     );
 
-    mux_Jump: entity work.mux
+    mux_Jump: entity work.mux2
      generic map(
         N => 32
     )
@@ -83,7 +85,7 @@ begin
 
     -- REGISTRE
     mux_WriteReg 
-    : entity work.mux
+    : entity work.mux2
      generic map(
         N => 5
     )
@@ -104,9 +106,11 @@ begin
         rd1 => ReadData1,
         rd2 => ReadData2
     );
-    SignImm <= (Instruction(15 downto 0))   & (15 downto 0 => '0');
+    --output_vector <= (15 downto 8 => input_vector(7)) & input_vector;
 
-    mux_Result: entity work.mux
+    SignImm <= ((16 downto 0 => Instruction(15)) ) & (Instruction(14 downto 0)) ;
+    
+    mux_Result: entity work.mux2
      generic map(
         N => 32
     )
@@ -117,7 +121,7 @@ begin
         out1 => Result
     );
     --ALU
-    mux_srcB: entity work.mux
+    mux_srcB: entity work.mux2
     generic map (
       N => 32
     )
@@ -128,7 +132,7 @@ begin
       out1    => srcB
     );
 
-    UAL_inst: entity work.UAL
+    UAL_inst: entity work.UAL1
      generic map(
         N => 32
     )

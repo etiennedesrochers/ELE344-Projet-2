@@ -16,7 +16,6 @@ end entity;
 architecture rtl of top is
   signal PC_s : std_logic_vector(31 downto 0);
   signal Instruction: std_logic_vector(31 downto 0);
-  signal ReadData : std_logic_vector(31 downto 0);
   signal MemRead : std_logic;
   signal MemWrite : std_logic;
   signal AluResult_s : std_logic_vector(31 downto 0);
@@ -35,7 +34,7 @@ begin
      port map(
         clk => clk,
         reset => reset,
-        ReadData => ReadData,
+        ReadData => ReadData_s,
         Instruction => Instruction,
         MemRead => MemRead,
         MemWrite => MemWrite,
@@ -47,10 +46,12 @@ begin
     port map (
       clk       => clk,
       MemWrite  => MemWrite,
+      Memread => MemRead,
       adresse   => AluResult_s,
       WriteData => WriteData_s,
       ReadData  => ReadData_s
-    );
+      
+      );
     PC<= PC_s;
     AluResult <= AluResult_s;
     WriteData <= WriteData_s;

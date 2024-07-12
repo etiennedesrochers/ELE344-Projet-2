@@ -17,6 +17,7 @@ begin
     begin
         if RESET = '1' then
             PC_Value <= (others=>'0');
+        
         elsif rising_edge(CLK) then 
             PC_Value <= PC_IN;
         end if;             

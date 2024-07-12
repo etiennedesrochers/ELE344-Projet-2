@@ -11,15 +11,15 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY UAL IS
+ENTITY UAL1 IS
   GENERIC (N : integer := 32);
   PORT (ualControl : IN  std_logic_vector(3 DOWNTO 0);
         srcA, srcB : IN  std_logic_vector(N-1 DOWNTO 0);
         result     : OUT std_logic_vector(N-1 DOWNTO 0);
         cout, zero : OUT std_logic);
-END UAL;
+END UAL1;
 
-ARCHITECTURE rtl OF UAL IS
+ARCHITECTURE rtl OF UAL1 IS
   SIGNAL operation                    : std_logic_vector(1 DOWNTO 0);
   SIGNAL op1, op2                     : std_logic;
   SIGNAL somme, srcAMux, srcBMux, res : std_logic_vector(N-1 DOWNTO 0);
@@ -35,32 +35,28 @@ BEGIN
   srcAMux   <= srcA when op1 ='0' else not srcA;
   srcBMux   <= srcB when op2 ='0' else not srcB;
 
-  
   -- Multiplexeur 4-a-1 pour generer le signal res
-  PROCESS (ualControl,srcA,srcB,srcAMux,srcBMux,op1,op2,operation,retenueSomme,somme)
+  PROCESS (ualControl, srcAMux, srcBMux, somme)
   BEGIN
-  --Case selon l'oppération
     case operation is
       when "00" => res <= srcAMux and srcBMux; --AND
       when "01" => res <= srcAMux or srcBMux;  --OR
       when "10" => res <= somme;               --ADD
       when others =>                           --SLT
-      res <= (others=>'0');
-      res(0)<=somme(n-1);
+        res <= (others => '0');
+        res(0) <= somme(N-1);
     end case;
   END PROCESS;
 
   --Assignation de la valeur de la somme sur 33 bits
-  retenueSomme <= resize(unsigned(srcAMux), srcAMux'length+1) + unsigned(srcBMux)+ unsigned'("" & op2);
+  retenueSomme <= resize(unsigned(srcAMux), N+1) + unsigned(srcBMux) + unsigned'("" & op2);
   --Assigne la valeur de la somme sur 32 bits
-  somme <=  std_logic_vector(retenueSomme(n-1 DOWNTO 0));
-  --Assigne la valeur de la retunue
-  COUT  <=retenueSomme(n);
+  somme <= std_logic_vector(retenueSomme(N-1 DOWNTO 0));
+  --Assigne la valeur de la retenue
+  cout <= retenueSomme(N);
   --Assigne la valeur result = 0 
   zero <= '1' when (res = zeros) else '0';
   --Assigne le resultat
   result <= res;
 
 END rtl;
-
-

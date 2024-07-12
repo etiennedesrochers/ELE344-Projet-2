@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA/18.1
 Eaddpclus4signext
-Z0 w1719596640
+Z0 w1720802766
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VN`RdzYoX]Vo<RahIKmme^3
 !s100 47Ca=cSa2_23Tmdf6PXGS0
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1720108415
+Z8 !s110 1720803284
 !i10b 1
-Z9 !s108 1720108415.000000
+Z9 !s108 1720803283.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|addpclus4signext.vhd|
 Z11 !s107 addpclus4signext.vhd|
 !i113 1
@@ -37,8 +37,8 @@ R3
 Z14 DEx4 work 16 addpclus4signext 0 22 N`RdzYoX]Vo<RahIKmme^3
 l15
 L13
-VSmi4g8?LDmFES69ja[>>41
-!s100 1[cz:@XD[7cH9XLh[8_5E2
+Vn457_A3n2Wz?NXIb@XcV<0
+!s100 fDH]_6B9iH0PFC@5MTl?A1
 R7
 31
 R8
@@ -65,9 +65,9 @@ R7
 31
 R8
 !i10b 1
-R9
-Z18 !s90 -reportprogress|300|-93|-work|work|control.vhd|
-Z19 !s107 control.vhd|
+Z18 !s108 1720803284.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|control.vhd|
+Z20 !s107 control.vhd|
 !i113 1
 R12
 R13
@@ -75,7 +75,7 @@ Acontrol
 R1
 R2
 R3
-Z20 DEx4 work 7 control 0 22 ?EghY0cgPg<HnX?8>WK:00
+Z21 DEx4 work 7 control 0 22 ?EghY0cgPg<HnX?8>WK:00
 l17
 L13
 V@Uzd4CbCnhTPC5M=I[DOb2
@@ -84,38 +84,38 @@ R7
 31
 R8
 !i10b 1
-R9
 R18
 R19
+R20
 !i113 1
 R12
 R13
 Econtrol_tb
-Z21 w1718999586
-Z22 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z22 w1718999586
+Z23 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
 R3
 R4
-Z23 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd
-Z24 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd
+Z24 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd
+Z25 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd
 l0
 L7
 VT7QG78;N?KCiUJH4fzF[Q0
 !s100 Se;=V`c0>Y_FlTh[BIgQl2
 R7
 32
-Z25 !s110 1720106185
+Z26 !s110 1720803258
 !i10b 1
-Z26 !s108 1720106185.000000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
-Z28 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
+Z27 !s108 1720803258.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
+Z29 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/control_tb.vhd|
 !i113 1
-Z29 o-work work -2002 -explicit
+Z30 o-work work -2002 -explicit
 R13
 Acontrol_tb_arc
-Z30 DEx4 work 10 controller 0 22 ObEE^5PR[EzcQ=16Occ0o2
-R22
+Z31 DEx4 work 10 controller 0 22 ObEE^5PR[EzcQ=16Occ0o2
+R23
 R1
 R2
 R3
@@ -126,16 +126,16 @@ V4D:;Q5;llS2F]b<L4@`1h0
 !s100 e:5d8FUh8XnX0]03GiM1U3
 R7
 32
-R25
-!i10b 1
 R26
+!i10b 1
 R27
 R28
-!i113 1
 R29
+!i113 1
+R30
 R13
 Econtroller
-Z31 w1718999408
+Z32 w1718999408
 R1
 R2
 R3
@@ -148,11 +148,11 @@ VObEE^5PR[EzcQ=16Occ0o2
 !s100 A@ASYX5>GB7g5_JO;_V]=2
 R7
 31
-Z32 !s110 1719598448
+Z33 !s110 1719598448
 !i10b 1
-Z33 !s108 1719598448.000000
-R18
+Z34 !s108 1719598448.000000
 R19
+R20
 !i113 1
 R12
 R13
@@ -160,45 +160,45 @@ Acontrol
 R1
 R2
 R3
-R30
+R31
 l17
 L13
 VD>9jUKV3IWQkfk2`@@Zli3
 !s100 A3DQ5>TnTL<bVj9^Lc;T81
 R7
 31
-R32
-!i10b 1
 R33
-R18
+!i10b 1
+R34
 R19
+R20
 !i113 1
 R12
 R13
 Edata_path
-Z34 w1719597525
+Z35 w1719597525
 R1
 R2
 R3
 R4
-Z35 8datapath.vhd
-Z36 Fdatapath.vhd
+Z36 8datapath.vhd
+Z37 Fdatapath.vhd
 l0
 L5
 V2Zg=PHS>4GR2Zk=dQ5ESI2
 !s100 [C0mf`_LXeoNGNBVZfFTj2
 R7
 31
-Z37 !s110 1719598449
+Z38 !s110 1719598449
 !i10b 1
-R33
-Z38 !s90 -reportprogress|300|-93|-work|work|datapath.vhd|
-Z39 !s107 datapath.vhd|
+R34
+Z39 !s90 -reportprogress|300|-93|-work|work|datapath.vhd|
+Z40 !s107 datapath.vhd|
 !i113 1
 R12
 R13
 Artl
-Z40 DEx4 work 3 ual 0 22 9`fFMOCU=952oamXmenPN1
+DEx4 work 3 ual 0 22 9`fFMOCU=952oamXmenPN1
 Z41 DEx4 work 7 regfile 0 22 ZIH<BC_QhGZW5@AOKMC>30
 Z42 DEx4 work 3 mux 0 22 7Vb[XVSD7?5jSSLeiPi:53
 R14
@@ -214,22 +214,22 @@ V1RL0O04MW<cYQH5A0jAh00
 !s100 3nIhj@^`j[gL7HYLU>3G21
 R7
 31
-R37
-!i10b 1
-R33
 R38
+!i10b 1
+R34
 R39
+R40
 !i113 1
 R12
 R13
 Edatapath
-Z45 w1720107768
+Z45 w1720803253
 R1
 R2
 R3
 R4
-R35
 R36
+R37
 l0
 L5
 VMV1RW^_<=<PLkXf[YK@5a3
@@ -238,56 +238,56 @@ R7
 31
 R8
 !i10b 1
-R9
-R38
+R18
 R39
+R40
 !i113 1
 R12
 R13
 Artl
-R40
+Z46 DEx4 work 4 ual1 0 22 PofmaT5FFGK7[N2SVHO2T1
 R41
-R42
+Z47 DEx4 work 4 mux2 0 22 S@E_Kz=4d3O6CGT^I10Wl3
 R43
 R44
 R1
 R2
 R3
-Z46 DEx4 work 8 datapath 0 22 MV1RW^_<=<PLkXf[YK@5a3
-l35
+Z48 DEx4 work 8 datapath 0 22 MV1RW^_<=<PLkXf[YK@5a3
+l36
 L16
-V@;cmaGg00mWk]d]6M50X=1
-!s100 JGaJ8XdGA5n`@`_33bQ:a3
+VP:N3cC[J]6;]JJ=;AEfC61
+!s100 Mg0]WN[2l4khn=F;97m:R3
 R7
 31
 R8
 !i10b 1
-R9
-R38
+R18
 R39
+R40
 !i113 1
 R12
 R13
 Edec7seg
-Z47 w1718999001
+Z49 w1718999001
 R2
 R3
 R4
-Z48 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd
-Z49 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd
+Z50 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd
+Z51 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd
 l0
 L12
 VBC`a5j6:V<76Qj;^DYYMg0
 !s100 d8IF9YbiMmZo5?[KKU2Se2
 R7
 32
-R25
+Z52 !s110 1720803259
 !i10b 1
-R26
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd|
-Z51 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd|
+Z53 !s108 1720803259.000000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd|
+Z55 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/dec7seg.vhd|
 !i113 1
-R29
+R30
 R13
 Adec7seg_archi
 R2
@@ -299,34 +299,34 @@ V]9Hm2ZO:c`fQa<I=<;[3M0
 !s100 da=Pb5@6B[F0LU1iaTo@G0
 R7
 32
-R25
+R52
 !i10b 1
-R26
-R50
-R51
+R53
+R54
+R55
 !i113 1
-R29
+R30
 R13
 Edmem
-R47
+Z56 w1720202659
 R1
 R2
 R3
-Z52 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z57 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R4
-Z53 8dmem.vhd
-Z54 Fdmem.vhd
+Z58 8dmem.vhd
+Z59 Fdmem.vhd
 l0
 L17
-VdaEebfOT;h<O?3cN[01SC2
-!s100 ZCg9=A:N4Vo9<SIIMFLL_0
+V:fU9HJUASR_U22Nl=BJRo1
+!s100 _5fUYKI0BM60EH>PR@<dB3
 R7
 31
-R8
+Z60 !s110 1720803285
 !i10b 1
-R9
-Z55 !s90 -reportprogress|300|-93|-work|work|dmem.vhd|
-Z56 !s107 dmem.vhd|
+Z61 !s108 1720803285.000000
+Z62 !s90 -reportprogress|300|-93|-work|work|dmem.vhd|
+Z63 !s107 dmem.vhd|
 !i113 1
 R12
 R13
@@ -334,41 +334,41 @@ Admem_arch
 R1
 R2
 R3
-R52
-Z57 DEx4 work 4 dmem 0 22 daEebfOT;h<O?3cN[01SC2
+R57
+Z64 DEx4 work 4 dmem 0 22 :fU9HJUASR_U22Nl=BJRo1
 l33
 L24
 VT6:jKF2TS5mYVJDa57N`X2
 !s100 l_1m9XWkbQ[C`B<_W_BPd3
 R7
 31
-R8
+R60
 !i10b 1
-R9
-R55
-R56
+R61
+R62
+R63
 !i113 1
 R12
 R13
 Eimem
-Z58 w1720107207
+Z65 w1720209202
 R1
 R2
 R3
 R4
-Z59 8imem.vhd
-Z60 Fimem.vhd
+Z66 8imem.vhd
+Z67 Fimem.vhd
 l0
 L14
 VE3Ja:U9jJNLJd<zNdIon>3
 !s100 Zg=zeS19;9hLQAQYhFJ4]3
 R7
 31
-R8
+R60
 !i10b 1
-R9
-Z61 !s90 -reportprogress|300|-93|-work|work|imem.vhd|
-Z62 !s107 imem.vhd|
+R18
+Z68 !s90 -reportprogress|300|-93|-work|work|imem.vhd|
+Z69 !s107 imem.vhd|
 !i113 1
 R12
 R13
@@ -376,29 +376,29 @@ Aimem_arch
 R1
 R2
 R3
-Z63 DEx4 work 4 imem 0 22 E3Ja:U9jJNLJd<zNdIon>3
-l44
+Z70 DEx4 work 4 imem 0 22 E3Ja:U9jJNLJd<zNdIon>3
+l48
 L20
-V?F=VRa_9j8>RCdgW4JQ3M0
-!s100 J@64oJ1nD`fU4HkMV;cZT2
+VnB3N[bQZ@dIY`a[SNiTFV0
+!s100 03VKebKh^8io;MQCMHP=T0
 R7
 31
-R8
+R60
 !i10b 1
-R9
-R61
-R62
+R18
+R68
+R69
 !i113 1
 R12
 R13
 Emips
-Z64 w1719598523
+Z71 w1719598523
 R1
 R2
 R3
 R4
-Z65 8mips.vhd
-Z66 Fmips.vhd
+Z72 8mips.vhd
+Z73 Fmips.vhd
 l0
 L5
 VXjBb7bn?25Egf48nV0h:S0
@@ -407,19 +407,19 @@ R7
 31
 R8
 !i10b 1
-R9
-Z67 !s90 -reportprogress|300|-93|-work|work|mips.vhd|
-Z68 !s107 mips.vhd|
+R18
+Z74 !s90 -reportprogress|300|-93|-work|work|mips.vhd|
+Z75 !s107 mips.vhd|
 !i113 1
 R12
 R13
 Artl
-R46
-R20
+R48
+R21
 R1
 R2
 R3
-Z69 DEx4 work 4 mips 0 22 XjBb7bn?25Egf48nV0h:S0
+Z76 DEx4 work 4 mips 0 22 XjBb7bn?25Egf48nV0h:S0
 l30
 L19
 Vch4i`k7=bIE>aYf:]6LM01
@@ -428,31 +428,31 @@ R7
 31
 R8
 !i10b 1
-R9
-R67
-R68
+R18
+R74
+R75
 !i113 1
 R12
 R13
 Emux
-Z70 w1719597238
+Z77 w1720800101
 R1
 R2
 R3
 R4
-Z71 8mux2.vhd
-Z72 Fmux2.vhd
+Z78 8mux2.vhd
+Z79 Fmux2.vhd
 l0
 L5
 V7Vb[XVSD7?5jSSLeiPi:53
 !s100 iKPg]9IXRf]fK]B`MZ4^T1
 R7
 31
-Z73 !s110 1720108414
+Z80 !s110 1720800115
 !i10b 1
-Z74 !s108 1720108414.000000
-Z75 !s90 -reportprogress|300|-93|-work|work|mux2.vhd|
-Z76 !s107 mux2.vhd|
+Z81 !s108 1720800115.000000
+Z82 !s90 -reportprogress|300|-93|-work|work|mux2.vhd|
+Z83 !s107 mux2.vhd|
 !i113 1
 R12
 R13
@@ -463,37 +463,119 @@ R3
 R42
 l19
 L15
-VRA[IgdRzME?D[KO=B6n6<1
-!s100 61RYAJTAB?c6GRK<M[dbg2
+VID=g[EOkS_GX^<@R[<9]=0
+!s100 j>G?KO0H54HcUS0<`8fj^0
 R7
 31
-R73
+R80
 !i10b 1
-R74
-R75
-R76
+R81
+R82
+R83
 !i113 1
 R12
 R13
-Epc
-Z77 w1719601410
+Emux2
+Z84 w1720801361
 R1
 R2
 R3
 R4
-Z78 8pc.vhd
-Z79 Fpc.vhd
+R78
+R79
+l0
+L5
+VS@E_Kz=4d3O6CGT^I10Wl3
+!s100 jY96>dHShQgNAkJ]EQ^La1
+R7
+31
+Z85 !s110 1720803283
+!i10b 1
+R9
+R82
+R83
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+R47
+l19
+L15
+VWT`mmh5MEzzRiflkG7NmD3
+!s100 lz]c11^bPnX8UK=1Jl6XM3
+R7
+31
+R85
+!i10b 1
+R9
+R82
+R83
+!i113 1
+R12
+R13
+Emux4
+Z86 w1720801889
+R1
+R2
+R3
+R4
+Z87 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux4.vhd
+Z88 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux4.vhd
+l0
+L5
+VdQE3aCWeID2I<F2DMT7mA3
+!s100 bD`<5]=T;VK5d9RigeofQ0
+R7
+32
+Z89 !s110 1720803260
+!i10b 1
+Z90 !s108 1720803260.000000
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux4.vhd|
+Z92 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/mux4.vhd|
+!i113 1
+R30
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 4 mux4 0 22 dQE3aCWeID2I<F2DMT7mA3
+l19
+L15
+Vz=1Sa::ieGoDP_f5Pe_Zm3
+!s100 8m]^AUBAbWCSk5lT3:=H40
+R7
+32
+R89
+!i10b 1
+R90
+R91
+R92
+!i113 1
+R30
+R13
+Epc
+Z93 w1720211280
+R1
+R2
+R3
+R4
+Z94 8pc.vhd
+Z95 Fpc.vhd
 l0
 L5
 VGSVbiEF9i?S8aa:V`WGVb3
 !s100 ;UW[fgHa_HChI<zmizb;k0
 R7
 31
-R8
+R85
 !i10b 1
-R74
-Z80 !s90 -reportprogress|300|-93|-work|work|pc.vhd|
-Z81 !s107 pc.vhd|
+R9
+Z96 !s90 -reportprogress|300|-93|-work|work|pc.vhd|
+Z97 !s107 pc.vhd|
 !i113 1
 R12
 R13
@@ -504,39 +586,39 @@ R3
 R44
 l15
 L13
-VE@LT7b^[eV9?8bUXO`BX20
-!s100 hW;Q[z0PNjge>8D9Elj:A1
+VGa^N<4ISIVJJ?Hfla0UDF1
+!s100 loj;]mPjfZBNjUe3VieTO2
 R7
 31
-R8
+R85
 !i10b 1
-R74
-R80
-R81
+R9
+R96
+R97
 !i113 1
 R12
 R13
 Epc_plus4
-Z82 w1720106163
+Z98 w1720106163
 R1
 R2
 R3
 R4
-Z83 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd
-Z84 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd
+Z99 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd
+Z100 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd
 l0
 L5
 V^TP9O=:llizg`[8oz_<b<2
 !s100 [g[5m72JMg<XX3<d70TIU3
 R7
 32
-Z85 !s110 1720106186
+R89
 !i10b 1
-Z86 !s108 1720106186.000000
-Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd|
-Z88 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd|
+R53
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd|
+Z102 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/pcplus4.vhd|
 !i113 1
-R29
+R30
 R13
 Artl
 R1
@@ -549,22 +631,22 @@ Vk4AKEZESBV=XeEcT`M@SL1
 !s100 X:;4^CW7F2VA8_5dL^1S40
 R7
 32
-R85
+R89
 !i10b 1
-R86
-R87
-R88
+R53
+R101
+R102
 !i113 1
-R29
+R30
 R13
 Eregfile
-R47
+R49
 R1
 R2
 R3
 R4
-Z89 8regfile.vhd
-Z90 Fregfile.vhd
+Z103 8regfile.vhd
+Z104 Fregfile.vhd
 l0
 L17
 VZIH<BC_QhGZW5@AOKMC>30
@@ -573,9 +655,9 @@ R7
 31
 R8
 !i10b 1
-R9
-Z91 !s90 -reportprogress|300|-93|-work|work|regfile.vhd|
-Z92 !s107 regfile.vhd|
+R18
+Z105 !s90 -reportprogress|300|-93|-work|work|regfile.vhd|
+Z106 !s107 regfile.vhd|
 !i113 1
 R12
 R13
@@ -592,59 +674,59 @@ R7
 31
 R8
 !i10b 1
-R9
-R91
-R92
+R18
+R105
+R106
 !i113 1
 R12
 R13
 Etop
-Z93 w1719605932
+Z107 w1720209970
 R1
 R2
 R3
 R4
-Z94 8top.vhd
-Z95 Ftop.vhd
+Z108 8top.vhd
+Z109 Ftop.vhd
 l0
 L6
 V^YlB@<gGA0zU`<^Bg57Xc0
 !s100 CO;<1U`Z`NIV?mcKY`5f=1
 R7
 31
-R8
+R60
 !i10b 1
-R9
-Z96 !s90 -reportprogress|300|-93|-work|work|top.vhd|
-Z97 !s107 top.vhd|
+R61
+Z110 !s90 -reportprogress|300|-93|-work|work|top.vhd|
+Z111 !s107 top.vhd|
 !i113 1
 R12
 R13
 Artl
-R52
 R57
-R69
-R63
+R64
+R76
+R70
 R1
 R2
 R3
-Z98 DEx4 work 3 top 0 22 ^YlB@<gGA0zU`<^Bg57Xc0
-l26
+DEx4 work 3 top 0 22 ^YlB@<gGA0zU`<^Bg57Xc0
+l25
 L16
-Z99 V9HW8W7J<`TD;bA@=E47WX3
-Z100 !s100 Q00@GBn^1eDMPKiUhbXNZ2
+VYL]QU2>]jc5JDf`0h0N7l2
+Z112 !s100 gk@UO9GS?_HU_H7LBAjjo1
 R7
 31
-R8
+R60
 !i10b 1
-R9
-R96
-R97
+R61
+R110
+R111
 !i113 1
 R12
 R13
 Etop_fpga
-R47
+R49
 R2
 R3
 R4
@@ -662,27 +744,68 @@ R7
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top_fpga.vhd|
 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/top_fpga.vhd|
 !i113 1
-R29
+R30
 R13
 Eual
-Z101 w1717787234
+Z113 w1720802979
 R1
 R2
 R3
 R4
-Z102 8ual.vhd
-Z103 Fual.vhd
+Z114 8C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd
+Z115 FC:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd
 l0
 L14
-V9`fFMOCU=952oamXmenPN1
+VNCUB[PSKS:TDMOh>SY5IT3
 !s100 _zXEffzekJbTQfjgWa[UZ0
+R7
+32
+Z116 !s110 1720802993
+!i10b 1
+Z117 !s108 1720802993.000000
+Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd|
+Z119 !s107 C:/Users/desro/Documents/ELE344/Projet 2/ELE344-Projet-2/Controlleur Model Sim/ual.vhd|
+!i113 1
+R30
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 3 ual 0 22 NCUB[PSKS:TDMOh>SY5IT3
+l28
+L22
+Va1mz0LfD@o42`egaz[TjN0
+!s100 LP_[J]a1T>E;_[Ta8f^Uz0
+R7
+32
+R116
+!i10b 1
+R117
+R118
+R119
+!i113 1
+R30
+R13
+Eual1
+Z120 w1720803206
+R1
+R2
+R3
+R4
+Z121 8ual.vhd
+Z122 Fual.vhd
+l0
+L14
+VPofmaT5FFGK7[N2SVHO2T1
+!s100 Qnm@0<YT7khjN1IY6>EDl3
 R7
 31
 R8
 !i10b 1
-R9
-Z104 !s90 -reportprogress|300|-93|-work|work|ual.vhd|
-Z105 !s107 ual.vhd|
+R18
+Z123 !s90 -reportprogress|300|-93|-work|work|ual.vhd|
+Z124 !s107 ual.vhd|
 !i113 1
 R12
 R13
@@ -690,18 +813,18 @@ Artl
 R1
 R2
 R3
-R40
+R46
 l28
 L22
-V`2zY`TkR]W9D:9GTi82eb0
-!s100 LP_[J]a1T>E;_[Ta8f^Uz0
+VN^`hTB:n0be:Z`[Yefz:l1
+!s100 2Q[EOfO7DTnzkoQJ5VBNT3
 R7
 31
 R8
 !i10b 1
-R9
-R104
-R105
+R18
+R123
+R124
 !i113 1
 R12
 R13
