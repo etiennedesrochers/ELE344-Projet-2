@@ -20,7 +20,7 @@ BEGIN
   PROCESS(entree)
   BEGIN
     CASE entree IS
-      WHEN "0000" => sortie <= "0000001";  -- 0
+      WHEN "0000" => sortie <= "0000000";  -- 0
       WHEN "0001" => sortie <= "1001111";  -- 1
       WHEN "0010" => sortie <= "0010010";  -- 2
       WHEN "0011" => sortie <= "0000110";  -- 3
